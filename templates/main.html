@@ -20,16 +20,44 @@
     <title>Linker</title>
 </head>
 <body>
-<nav class="navbar">
-    <div class="navbar_logo">
-        <i class="fa-solid fa-cloud"></i>
-        <a href="">codingclub</a>
-    </div>
-    <div class="navbar_toogleBtn">
-        <i class="fas fa-bars"></i>
-    </div>
+<div id="logo">2Slide</div>
+<div id="toggle"></div>
+<div id="sidebar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn">Genre</button>
+                <div class="dropdown-content">
+                    <a href="#">숏박스</a>
+                    <a href="#">애플코딩</a>
+                    <a href="#">MUSAT</a>
+                    <a href="#">신세경</a>
+                    <a href="#">노마드코더</a>
+                </div>
+            </div>
+        </li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+<script>
+    const toggle = document.getElementById('toggle');
+    const sidebar = document.getElementById('sidebar');
 
-</nav>
+    document.onclick = function (e) {
+        if (e.target.id !== 'sidebar' && e.target.id !== 'toggle') {
+            toggle.classList.remove('active')
+            sidebar.classList.remove('active')
+        }
+    }
+
+    toggle.onclick = function () {
+        toggle.classList.toggle('active');
+        sidebar.classList.toggle('active');
+    }
+</script>
 <div class="videoList">
     <table class="table">
         <tr>

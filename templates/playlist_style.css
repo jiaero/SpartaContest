@@ -1,20 +1,23 @@
 body {
-    background-color: #2d2d2d;
+    background-color: #ffffff;
     color: aliceblue;
 }
-
 #carouselExampleControls {
     width: 800px;
     height: 400px;
     margin: 50px auto 10px auto;
     background-color: bisque;
 }
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
 form{
     background-color: #2d2d2d;
 }
 a{
     text-decoration: none;
-    color: aliceblue;
+    color: black;
+    font-size: 15px;
 }
 .carousel-inner {
     width: 100%;
@@ -25,7 +28,7 @@ a{
     display: inline;
 }
 .videoDiv img {
-    width: 400px;
+    width: 270px;
     height: auto;
 }
 table{
@@ -35,15 +38,22 @@ td, th{
     border: none;
 }
 .table{
-    width: 100%;
-    margin: auto;
+    width: 1200px;
+    margin: 20px auto 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .video{
-    margin: 20px;
+    margin-top: 20px;
 }
 .channelImg{
-    margin: 20px;
+    margin: 9px 7px 16px 0;
     border-radius: 50%;
+    width: 45px;
+    height: 45px;
 }
 .youtuber{
     display: inline;
@@ -78,4 +88,66 @@ td, th{
 
 #post-button {
     float: right;
+}
+
+/*navbar css*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 8px 12px;
+}
+
+.navbar_logo {
+    font-size: 24px;
+    color: black;
+}
+
+.navbar_logo i {
+    color: red;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu li {
+    padding: 8px 12px;
+}
+
+.navbar-menu li:hover {
+    background-color: olive;
+    border-radius: 4px;
+}
+
+.navbar_toogleBtn {
+    color: black;
+    display: flex;
+    padding: 8px 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar_menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_toogleBtn {
+        display: flex;
+    }
 }

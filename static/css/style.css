@@ -120,10 +120,22 @@ input[type="submit"]:hover {
 
 /*/ login */
 
+/*!*main Photo*! (보류)*/
+/*#mainPhoto{*/
+/*    width: 100%;*/
+/*    margin: auto;*/
+/*}*/
+/*#mainPhoto img{*/
+/*    width: 100%;*/
+/*    height: 500px;*/
+/*    object-fit: cover;*/
+/*}*/
+/*/main Photo*!*!*/
+
 /* Search Bar*/
 .subTitle {
     margin: 80px 540px;
-    color: black;
+    color: #eb6383;
     font-size: 50px;
     font-family: 'Lora', serif;
 }

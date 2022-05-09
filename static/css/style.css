@@ -1,7 +1,6 @@
 body {
     margin: 0;
-    padding: 0;
-    height: 100vh;
+
 }
 
 /* login */
@@ -122,6 +121,17 @@ input[type="submit"]:hover {
 /*/ login */
 
 /* Search Bar*/
+#genre .genreEa a {
+    color: #adadad;
+    transition: .5s;
+    text-decoration: none;
+    text-underline: none;
+}
+
+#genre .genreEa a:hover {
+    color: #eb6383;
+}
+
 #search {
     width: 400px;
     margin: 80px auto;
@@ -131,7 +141,9 @@ input[type="submit"]:hover {
     margin: 80px 150px;
     color: black;
     font-size: 50px;
+    font-family: 'Lora', serif;
 }
+
 form .searchBar {
     position: relative;
     border-bottom: 2px solid #eb6383;
@@ -140,9 +152,9 @@ form .searchBar {
 
 .searchBar input {
     width: 100%;
-    padding: 0 30px;
-    height: 40px;
-    font-size: 16px;
+    padding: 0 43px;
+    height: 60px;
+    font-size: 30px;
     border: none;
     background: none;
     outline: none;
@@ -154,7 +166,7 @@ form .searchBar {
     left: 5px;
     color: #adadad;
     transform: translateY(-50%);
-    font-size: 22px;
+    font-size: 50px;
     pointer-events: none;
     transition: .7s;
 }
@@ -170,6 +182,7 @@ form .searchBar {
 #slide {
     width: 185px;
     margin: 30px auto;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #slide #logo {
@@ -204,18 +217,18 @@ form .searchBar {
 
 #slide:hover #lide {
     transform: translateX(-16px);
-    transition: .7s;
-    color: white;
+    transition: 1.5s;
+    color: transparent;
 }
 
 #slide:hover #S {
-    transform: translateX(-20px);
-    transition: .7s;
+    transform: translateX(30px);
+    transition: 1s;
 }
 
 #slide:hover #Two {
-    transform: translateX(20px);
-    transition: .7s;
+    transform: translateX(70px);
+    transition: .9s;
 }
 
 /*/ main - logo */
@@ -450,8 +463,12 @@ td, th {
 }
 
 .videoList {
-    margin: 40px;
-    display: inline;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
 }
 
 .videoDiv img {
@@ -492,103 +509,106 @@ td, th {
 
 /*Footer*/
 .wrapper {
-  height: auto;
-  min-height: 100%;
-  padding-bottom: 300px;
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 300px;
 }
 
 footer {
-  position: relative;
-  transform: translateY(-100%);
-  font-family: "Nanum Gothic", sans-serif;
-  color: #eb6383;
-  width: 100%;
-  height: 300px;
-  box-shadow : -1px -2px 2px 2px rgb(169, 169, 169) inset, 3px 2px 3px 3px rgb(155, 155, 155);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    position: relative;
+    transform: translateY(-100%);
+    font-family: "Nanum Gothic", sans-serif;
+    color: #eb6383;
+    width: 100%;
+    height: 300px;
+    box-shadow: -1px -2px 2px 2px rgb(169, 169, 169) inset, 3px 2px 3px 3px rgb(155, 155, 155);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .footer-title {
-  display:flex;
-  padding: 20px;
-  width:400px;
-  justify-content: space-evenly;
+    display: flex;
+    padding: 20px;
+    width: 400px;
+    justify-content: space-evenly;
 }
-.footer-title-fst{
-  display:flex;
+
+.footer-title-fst {
+    display: flex;
 }
 
 .footer-contents {
-  width: 100%;
-  display: flex;
-  margin-bottom:40px;
-  justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-evenly;
 }
 
 .footer-fe-box ul,
 .footer-be-box ul {
-  padding: 0;
-  margin: 0;
-  text-align: left;
+    padding: 0;
+    margin: 0;
+    text-align: left;
 }
 
 .footer-name {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .fa-github,
-.footer-about a{
-  color: #eb6383;
+.footer-about a {
+    color: #eb6383;
 }
 
-.fa-github:hover{
-  color: black;
+.fa-github:hover {
+    color: black;
 }
 
 .footer-copy {
-  font-size: 12px;
-  margin-right: 20px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+    font-size: 12px;
+    margin-right: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .footer-searchbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #button-addon2 {
-  background-color: #fe0000;
-  border: none;
+    background-color: #fe0000;
+    border: none;
 }
 
 .fa-youtube {
-  color: black;
+    color: black;
 }
 
 .footer-about {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: space-evenly;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
 }
+
 .footer-about a {
-  margin: 5px;
+    margin: 5px;
 }
 
 
-.footer-img{
-  width:70px;
-  height:40px;
+.footer-img {
+    width: 70px;
+    height: 40px;
 }
+
 /*/Footer*/

@@ -3,7 +3,7 @@ body {
 
 }
 
-/* login */
+/* login, register */
 .center {
     position: absolute;
     top: 30%;
@@ -121,28 +121,64 @@ input[type="submit"]:hover {
 /*/ login */
 
 /* Search Bar*/
+.subTitle {
+    margin: 80px 540px;
+    color: black;
+    font-size: 50px;
+    font-family: 'Lora', serif;
+}
+#whatru {
+    transition: .8s;
+}
+#gonslide {
+    transition: .8s;
+}
+.subTitle:hover #whatru {
+    transform: translateX(-60%);
+}
+.subTitle:hover #gonslide {
+    transform: translateX(60%);
+}
+#genre {
+    width: 420px;
+    margin: 0 auto 40px;
+}
+
+#genre .genreEa {
+    display: inline-block;
+    width: auto;
+    height: 30px;
+    padding: 0 20px;
+    border: 2px solid #eb6383;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    margin: 5px auto;
+}
+
 #genre .genreEa a {
     color: #adadad;
     transition: .5s;
     text-decoration: none;
     text-underline: none;
+
 }
 
 #genre .genreEa a:hover {
     color: #eb6383;
 }
 
-#search {
-    width: 400px;
-    margin: 80px auto;
+#searchBox {
+    width: 800px;
+    margin: auto;
 }
 
-.subTitle {
-    margin: 80px 150px;
-    color: black;
-    font-size: 50px;
-    font-family: 'Lora', serif;
+#search {
+    width: 400px;
+    margin: 30px auto;
 }
+
+
 
 form .searchBar {
     position: relative;
@@ -361,89 +397,6 @@ li a:hover {
 }
 
 /*/ navbar*/
-
-#carouselExampleControls {
-    width: 800px;
-    height: 400px;
-    margin: 50px auto 10px auto;
-    background-color: bisque;
-}
-
-.carousel-inner {
-    width: 100%;
-    height: 100%;
-}
-
-.videoList {
-    margin: 40px;
-    display: inline;
-}
-
-.videoDiv iframe {
-    width: 500px;
-    height: 281px;
-}
-
-table {
-    border-collapse: collapse;
-}
-
-td, th {
-    border: none;
-}
-
-.table {
-    width: 100%;
-    margin: auto;
-}
-
-.video {
-    margin: 20px;
-}
-
-.channelImg {
-    margin: 20px;
-    border-radius: 50%;
-}
-
-.youtuber {
-    display: inline;
-}
-
-.form-group {
-    margin: 20px;
-}
-
-#author {
-    height: 80px;
-    width: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 10px 10px 10px 20px;
-}
-
-.carousel-item {
-    width: 100%;
-    height: 100%;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#comment {
-    width: 50%;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#post-button {
-    float: right;
-}
-
 /*main*/
 .table a {
     text-decoration: none;
@@ -466,13 +419,11 @@ td, th {
     position: relative;
     display: flex;
     width: 100%;
-    height: auto;
-    margin: auto;
     text-align: center;
 }
 
 .videoDiv img {
-    width: 270px;
+    width: 300px;
     height: auto;
 }
 
@@ -598,7 +549,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: space-evenly;
 }
 
 .footer-about a {

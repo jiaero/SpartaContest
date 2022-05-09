@@ -98,3 +98,13 @@ th {
 #post-button {
     float: right;
 }
+
+#prev-button {
+    margin-left: -100px;
+    filter: invert(100%);
+}
+
+#next-button {
+    margin-right: -100px;
+    filter: invert(100%);
+}

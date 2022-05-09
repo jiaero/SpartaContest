@@ -40,7 +40,20 @@
         }
 
         function showSlides() {
-            
+            $.ajax({
+                type: 'GET',
+                url: 'http://',
+                data:{},
+                success: function (response) {
+                    let videoLink
+                    let imageLink
+                    let alt
+                    let temp_html = `<div class="carousel-item active">
+                    <a href="${videoLink}" target="_blank"><img src="${imageLink}" class="d-block w-100"
+                            alt="${alt}"></a>
+                </div>`
+                }
+            })
         }
 
     </script>

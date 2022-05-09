@@ -1,6 +1,5 @@
 body {
-    background-color: #2d2d2d;
-    color: aliceblue;
+    color: black;
 }
 
 #main {
@@ -15,13 +14,10 @@ body {
     margin: 50px auto 10px auto;
 }
 
-form {
-    background-color: #2d2d2d;
-}
 
 a {
     text-decoration: none;
-    color: aliceblue;
+    color:black;
 }
 
 .carousel-inner {
@@ -69,6 +65,7 @@ th {
 
 .form-group {
     margin: 20px;
+    color:black;
 }
 
 #author {

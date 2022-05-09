@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
@@ -16,6 +17,33 @@
 
     <!-- External CSS -->
     <link type="text/css" rel="stylesheet" href="playlist_style.css">
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            showComments();
+        });
+
+        function showComments() {
+            $('#comment-box').empty()
+
+            let commentCount = Math.random()*20;
+
+            let temp_html = `<tr>
+                    <td>False Id</td>
+                    <td>False Comment</td>
+                </tr>`
+            for(let i = 0; i < commentCount; i++) {
+                $('#comment-box').append(temp_html)
+            }
+            
+        }
+
+        function showSlides() {
+            
+        }
+
+    </script>
 
     <title>Document</title>
 </head>
@@ -64,13 +92,16 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item">
-                    <a href="#" target="_blank"><img src="../static/black_cat.jpg" class="d-block w-100" alt="black_cat"></a>
+                    <a href="playvideo.html" target="_blank"><img src="../static/black_cat.jpg" class="d-block w-100"
+                            alt="black_cat"></a>
                 </div>
                 <div class="carousel-item active">
-                    <a href="#" target="_blank"><img src="../static/sofa_cat.jpg" class="d-block w-100" alt="sofa_cat"></a>
+                    <a href="playvideo.html" target="_blank"><img src="../static/sofa_cat.jpg" class="d-block w-100"
+                            alt="sofa_cat"></a>
                 </div>
                 <div class="carousel-item">
-                    <a href="#" target="_blank"><img src="../static/striped_cat.png" class="d-block w-100" alt="striped_cat"></a>
+                    <a href="playvideo.html" target="_blank"><img src="../static/striped_cat.png" class="d-block w-100"
+                            alt="striped_cat"></a>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -91,12 +122,28 @@
         <form>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Comment</label>
-                <textarea id="comment-textarea" class="form-control" id="exampleFormControlTextarea1" rows="1"
-                    style="background-color: #2d2d2d; color: aliceblue"></textarea>
+                <textarea id="comment-textarea" class="form-control" id="exampleFormControlTextarea1"
+                    rows="1"></textarea>
                 <button id="post-button" class="btn btn-primary mt-1" type="submit">post</button>
-
             </div>
         </form>
+
+        <div class="comments">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Comment</th>
+                    </tr>
+                </thead>
+                <tbody id="comment-box">
+                    <tr>
+                        <td>Sir Cat</td>
+                        <td>Well that's cute</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 

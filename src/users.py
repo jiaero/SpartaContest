@@ -51,7 +51,14 @@ def register():
     DB에 객체 삽입
     return 로그인 페이지로 이동
     '''
-    userName = request.form['user_id']
+    userName = request.form['username']
+    email = request.form['email']
+    password = request.form['password']
+    confirmPassword = request.form['confirmPassword']
+
+    if password != confirmPassword:
+        return {'msg': '비밀번호가 일치하지 않습니다.'}
+
     return
 
 # username 확인하는 함수 - 중복체크 버튼 클릭 or focus 옮겨질 때 실행

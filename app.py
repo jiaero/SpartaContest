@@ -1,14 +1,9 @@
 # app.py - main application
 
 from flask import Flask, render_template, session
-from pymongo import MongoClient
 
 #Flask App Setup
 app = Flask(__name__)
-
-#MongoDB Setup
-client = MongoClient('localhost', 27017)
-db = client.S2lide
 
 @app.route('/')
 def home():

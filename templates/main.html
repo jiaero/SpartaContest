@@ -8,9 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
     <!-- External CSS -->
-    <link type="text/css" rel="stylesheet" href="../../SpartaContest-master/static/style.css">
+    <link type="text/css" rel="stylesheet" href="../static/css/style.css">
 
     <title>2Slide Main</title>
 </head>
@@ -25,137 +26,218 @@
     <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li>
-            <div class="dropdown">
-                <button class="dropbtn">Genre</button>
-                <div class="dropdown-content">
-                    <a href="#">숏박스</a>
-                    <a href="#">애플코딩</a>
-                    <a href="#">MUSAT</a>
-                    <a href="#">신세경</a>
-                    <a href="#">노마드코더</a>
-                </div>
-            </div>
-        </li>
-        <li><a href="#">Team</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
 </div>
 <div class="subTitle">
-    <p class="">What are you</p>
-    <p>gonna slide ?</p>
+    <p id="whatru">What are U</p>
+    <p id="gonslide">gonna slide ?</p>
 </div>
-<div id="search">
-    <form class="searchForm">
-        <div class="searchBar">
-            <input type="text" required placeholder="어떤 장르를 찾고싶으세요?">
-            <span></span>
-            <label>#</label>
+<div id="searchBox">
+    <div id="search">
+        <form class="searchForm">
+            <div class="searchBar">
+                <input type="text" required placeholder="어떤 장르를 찾고싶으세요?">
+                <span></span>
+                <label>#</label>
+            </div>
+        </form>
+    </div>
+    <div id="genre">
+        <div class="genreEa">
+            <a href="#">냐옹</a>
         </div>
-    </form>
+        <div class="genreEa">
+            <a href="#">챔피언스리그</a>
+        </div>
+        <div class="genreEa">
+            <a href="#">해외축구</a>
+        </div>
+        <div class="genreEa">
+            <a href="#">코딩할때듣는노래</a>
+        </div>
+        <div class="genreEa">
+            <a href="#">노마드코더</a>
+        </div>
+        <div class="genreEa">
+            <a href="#">여행유튜브</a>
+        </div>
+        <div class="genreEa">
+            <a href="#">vlog</a>
+        </div>
+        <div class="genreEa">
+            <a href="#">헬스유튜브</a>
+        </div>
+        <div class="genreEa">
+            <a href="#">누가자꾸칭얼댐</a>
+        </div>
+        <div class="genreEa">
+            <a href="#">영화리뷰</a>
+        </div>
+        <div class="genreEa">
+            <a href="#">react</a>
+        </div>
+        <div class="genreEa">
+            <a href="#">먹방</a>
+        </div>
+        <div class="genreEa">
+            <a href="#">맛집탐방</a>
+        </div>
+        <div class="genreEa">
+            <a href="#">leagueoflegends</a>
+        </div>
+    </div>
 </div>
+
 <div class="videoList">
     <table class="table">
         <tr>
             <td>
                 <div class="videoDiv">
                     <a class="thumbnail" href="#">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ctmEaiKokOs"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                        <img src="https://i.ytimg.com/vi/V1VwK56G6Kc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAqBCMKoOJdcLkkX00_WZs1wCBPTQ">
                     </a>
                 </div>
                 <div>
                     <a class="thumbnail" href="#"><img class="channelImg"
-                                                       src="https://yt3.ggpht.com/ytc/AKedOLT-fxsnxR07h52arg_LlUegZPBOk_0V7QX9Mn_y6g=s176-c-k-c0x00ffffff-no-rj"></a>
-                    <a href="#">GREEN윤그린</a>
+                                                       src="https://yt3.ggpht.com/HR8Y6LIcxTbpZRl41Tq9ScyC_rRud-nKC2pkIHDfESn05I2wGPCDOkviHrahu4eMvaaj5wh7wCo=s68-c-k-c0x00ffffff-no-rj"></a>
+                    <a href="#">야전삽짱재</a>
                 </div>
             </td>
             <td>
                 <div class="videoDiv">
-                    <a href="#"><img class="video"
-                                     src="https://i.ytimg.com/an_webp/dKPa_BBo6AE/mqdefault_6s.webp?du=3000&sqp=CL2P3JMG&rs=AOn4CLBoy5nFACblo8675X2e0w_iEW83-Q"
-                                     class="img-fluid" alt="Responsive image"></a>
+                    <a class="thumbnail" href="#">
+                        <img src="https://i.ytimg.com/vi/V1VwK56G6Kc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAqBCMKoOJdcLkkX00_WZs1wCBPTQ">
+                    </a>
                 </div>
                 <div>
-                    <a href="#"><img class="channelImg"
-                                     src="https://yt3.ggpht.com/ytc/AKedOLSdMbI_eZH5Qzo4WHEg-IFWV3oL5kwWIMYjq5673Q=s176-c-k-c0x00ffffff-no-rj"></a>
-                    <a href="#">haha ha</a>
+                    <a class="thumbnail" href="#"><img class="channelImg"
+                                                       src="https://yt3.ggpht.com/HR8Y6LIcxTbpZRl41Tq9ScyC_rRud-nKC2pkIHDfESn05I2wGPCDOkviHrahu4eMvaaj5wh7wCo=s68-c-k-c0x00ffffff-no-rj"></a>
+                    <a href="#">야전삽짱재</a>
                 </div>
             </td>
             <td>
                 <div class="videoDiv">
-                    <a href="#"><img class="video"
-                                     src="https://i.ytimg.com/vi/GPMZn26SIOA/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB2mpMHnKYQ4f8Vf09yqzU6VUfPNQ"
-                                     class="img-fluid" alt="Responsive image"></a>
+                    <a class="thumbnail" href="#">
+                        <img src="https://i.ytimg.com/vi/V1VwK56G6Kc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAqBCMKoOJdcLkkX00_WZs1wCBPTQ">
+                    </a>
                 </div>
                 <div>
-                    <a href="#"><img class="channelImg"
-                                     src="https://yt3.ggpht.com/6zjXHMSFm-ymgxEnRmZNoVD4CMY_fw398AH33b1hTwaQMK4MA9PErj6oD_YkcQpLa_f6QYSl=s176-c-k-c0x00ffffff-no-rj"></a>
-                    <a href="#">행복한햄스터</a>
+                    <a class="thumbnail" href="#"><img class="channelImg"
+                                                       src="https://yt3.ggpht.com/HR8Y6LIcxTbpZRl41Tq9ScyC_rRud-nKC2pkIHDfESn05I2wGPCDOkviHrahu4eMvaaj5wh7wCo=s68-c-k-c0x00ffffff-no-rj"></a>
+                    <a href="#">야전삽짱재</a>
                 </div>
             </td>
             <td>
                 <div class="videoDiv">
-                    <a href="#"> <img class="video"
-                                      src="https://i.ytimg.com/vi/X521NvDaRB0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDD_1VgNwhPc7mUT9HYbgQ9E2BI9Q"
-                                      class="img-fluid" alt="Responsive image"></a>
+                    <a class="thumbnail" href="#">
+                        <img src="https://i.ytimg.com/vi/V1VwK56G6Kc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAqBCMKoOJdcLkkX00_WZs1wCBPTQ">
+                    </a>
                 </div>
                 <div>
-                    <a href="#"><img class="channelImg"
-                                     src="https://yt3.ggpht.com/b1dlqmcGLX-Dd4LHHlS1GJnCbw87YgIop8OGdPfIHXuCznx43iaKSYHOFyvyCMKpqWdEViUfOq0=s176-c-k-c0x00ffffff-no-rj"></a>
-                    <a href="#">MBTI 일상툰</a>
+                    <a class="thumbnail" href="#"><img class="channelImg"
+                                                       src="https://yt3.ggpht.com/HR8Y6LIcxTbpZRl41Tq9ScyC_rRud-nKC2pkIHDfESn05I2wGPCDOkviHrahu4eMvaaj5wh7wCo=s68-c-k-c0x00ffffff-no-rj"></a>
+                    <a href="#">야전삽짱재</a>
                 </div>
             </td>
         </tr>
         <tr>
             <td>
                 <div class="videoDiv">
-                    <a href="#"><img class="video"
-                                     src="https://i.ytimg.com/vi/39Fpzk3mbs4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC5nNNO-z7qhQc7IzWatvsSzl0EVg"
-                                     class="img-fluid" alt="Responsive image"></a>
+                    <a class="thumbnail" href="#">
+                        <img src="https://i.ytimg.com/vi/V1VwK56G6Kc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAqBCMKoOJdcLkkX00_WZs1wCBPTQ">
+                    </a>
                 </div>
                 <div>
-                    <a href="#"><img class="channelImg"
-                                     src="https://yt3.ggpht.com/aW-CCbaQ2rbDrEvmpjf630Xhh4wiXEAYs_vZuhX7t3T7tqohQGYl1YzpWNORdJwPin6SMtstyw=s176-c-k-c0x00ffffff-no-rj"></a>
-                    <a href="#">때껄룩ᴛᴀᴋᴇ ᴀ ʟᴏᴏᴋ</a>
+                    <a class="thumbnail" href="#"><img class="channelImg"
+                                                       src="https://yt3.ggpht.com/HR8Y6LIcxTbpZRl41Tq9ScyC_rRud-nKC2pkIHDfESn05I2wGPCDOkviHrahu4eMvaaj5wh7wCo=s68-c-k-c0x00ffffff-no-rj"></a>
+                    <a href="#">야전삽짱재</a>
                 </div>
             </td>
             <td>
                 <div class="videoDiv">
-                    <a href="#"> <img class="video"
-                                      src="https://i.ytimg.com/vi/qBDDZ6Y1RBA/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBcJc1ntbGqoGkpavf73i8ehtrFpw"
-                                      class="img-fluid" alt="Responsive image"></a>
+                    <a class="thumbnail" href="#">
+                        <img src="https://i.ytimg.com/vi/V1VwK56G6Kc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAqBCMKoOJdcLkkX00_WZs1wCBPTQ">
+                    </a>
                 </div>
                 <div>
-                    <a href="#"><img class="channelImg"
-                                     src="https://yt3.ggpht.com/Vp0ow4uae5gjMZPfB6S3mjCPvSq9aFKzwd8j-4aSCmYNVkf8aGufDotTDNMAEnVjbROnjZtV3Q=s176-c-k-c0x00ffffff-no-rj"></a>
-                    <a href="#">MODY</a>
+                    <a class="thumbnail" href="#"><img class="channelImg"
+                                                       src="https://yt3.ggpht.com/HR8Y6LIcxTbpZRl41Tq9ScyC_rRud-nKC2pkIHDfESn05I2wGPCDOkviHrahu4eMvaaj5wh7wCo=s68-c-k-c0x00ffffff-no-rj"></a>
+                    <a href="#">야전삽짱재</a>
                 </div>
             </td>
             <td>
                 <div class="videoDiv">
-                    <a href="#"> <img class="video"
-                                      src="https://i.ytimg.com/an_webp/Lh92CI9Etic/mqdefault_6s.webp?du=3000&sqp=CLSN3JMG&rs=AOn4CLBU8gYCdlBBDJ-bqvir5V-TuNU9qA"
-                                      class="img-fluid" alt="Responsive image"></a>
+                    <a class="thumbnail" href="#">
+                        <img src="https://i.ytimg.com/vi/V1VwK56G6Kc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAqBCMKoOJdcLkkX00_WZs1wCBPTQ">
+                    </a>
                 </div>
                 <div>
-                    <a href="#"><img class="channelImg"
-                                     src="https://yt3.ggpht.com/ytc/AKedOLTE3jLZJuvGJknl1ThY4AIWmBQYwMpwv3vDXd-e=s176-c-k-c0x00ffffff-no-rj"></a>
-                    <a href="#">도시오리 CityDuck</a>
+                    <a class="thumbnail" href="#"><img class="channelImg"
+                                                       src="https://yt3.ggpht.com/HR8Y6LIcxTbpZRl41Tq9ScyC_rRud-nKC2pkIHDfESn05I2wGPCDOkviHrahu4eMvaaj5wh7wCo=s68-c-k-c0x00ffffff-no-rj"></a>
+                    <a href="#">야전삽짱재</a>
                 </div>
             </td>
             <td>
                 <div class="videoDiv">
-                    <a href="#"><img class="video"
-                                     src="https://i.ytimg.com/vi/hqjvO2Z0R_o/hq720_live.jpg?sqp=CKyt05MG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB6kykvi3h9DzwFpdhyPXOMZd-nIw"
-                                     class="img-fluid" alt="Responsive image"></a>
+                    <a class="thumbnail" href="#">
+                        <img src="https://i.ytimg.com/vi/V1VwK56G6Kc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAqBCMKoOJdcLkkX00_WZs1wCBPTQ">
+                    </a>
                 </div>
                 <div>
-                    <a href="#"><img class="channelImg"
-                                     src="https://yt3.ggpht.com/8SIabRpF6s9NF9n9TOPBTzzXcdeUWP26G2Hx6oa2BX9vo4pVOYdTAXZdiJTx3OjxnvzcdwqPpQ=s176-c-k-c0x00ffffff-no-rj"></a>
-                    <a href="#">Lofi Vibes</a>
+                    <a class="thumbnail" href="#"><img class="channelImg"
+                                                       src="https://yt3.ggpht.com/HR8Y6LIcxTbpZRl41Tq9ScyC_rRud-nKC2pkIHDfESn05I2wGPCDOkviHrahu4eMvaaj5wh7wCo=s68-c-k-c0x00ffffff-no-rj"></a>
+                    <a href="#">야전삽짱재</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="videoDiv">
+                    <a class="thumbnail" href="#">
+                        <img src="https://i.ytimg.com/vi/V1VwK56G6Kc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAqBCMKoOJdcLkkX00_WZs1wCBPTQ">
+                    </a>
+                </div>
+                <div>
+                    <a class="thumbnail" href="#"><img class="channelImg"
+                                                       src="https://yt3.ggpht.com/HR8Y6LIcxTbpZRl41Tq9ScyC_rRud-nKC2pkIHDfESn05I2wGPCDOkviHrahu4eMvaaj5wh7wCo=s68-c-k-c0x00ffffff-no-rj"></a>
+                    <a href="#">야전삽짱재</a>
+                </div>
+            </td>
+            <td>
+                <div class="videoDiv">
+                    <a class="thumbnail" href="#">
+                        <img src="https://i.ytimg.com/vi/V1VwK56G6Kc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAqBCMKoOJdcLkkX00_WZs1wCBPTQ">
+                    </a>
+                </div>
+                <div>
+                    <a class="thumbnail" href="#"><img class="channelImg"
+                                                       src="https://yt3.ggpht.com/HR8Y6LIcxTbpZRl41Tq9ScyC_rRud-nKC2pkIHDfESn05I2wGPCDOkviHrahu4eMvaaj5wh7wCo=s68-c-k-c0x00ffffff-no-rj"></a>
+                    <a href="#">야전삽짱재</a>
+                </div>
+            </td>
+            <td>
+                <div class="videoDiv">
+                    <a class="thumbnail" href="#">
+                        <img src="https://i.ytimg.com/vi/V1VwK56G6Kc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAqBCMKoOJdcLkkX00_WZs1wCBPTQ">
+                    </a>
+                </div>
+                <div>
+                    <a class="thumbnail" href="#"><img class="channelImg"
+                                                       src="https://yt3.ggpht.com/HR8Y6LIcxTbpZRl41Tq9ScyC_rRud-nKC2pkIHDfESn05I2wGPCDOkviHrahu4eMvaaj5wh7wCo=s68-c-k-c0x00ffffff-no-rj"></a>
+                    <a href="#">야전삽짱재</a>
+                </div>
+            </td>
+            <td>
+                <div class="videoDiv">
+                    <a class="thumbnail" href="#">
+                        <img src="https://i.ytimg.com/vi/V1VwK56G6Kc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAqBCMKoOJdcLkkX00_WZs1wCBPTQ">
+                    </a>
+                </div>
+                <div>
+                    <a class="thumbnail" href="#"><img class="channelImg"
+                                                       src="https://yt3.ggpht.com/HR8Y6LIcxTbpZRl41Tq9ScyC_rRud-nKC2pkIHDfESn05I2wGPCDOkviHrahu4eMvaaj5wh7wCo=s68-c-k-c0x00ffffff-no-rj"></a>
+                    <a href="#">야전삽짱재</a>
                 </div>
             </td>
         </tr>
@@ -167,8 +249,15 @@
         toggle.classList.toggle('active');
         sidebar.classList.toggle('active');
     }
+    document.onclick = function (e) {
+        if (e.target.id !== 'sidebar' && e.target.id !== 'toggle') {
+            toggle.classList.remove('active')
+            sidebar.classList.remove('active')
+        }
+    }
     const searchbtn = document.getElementById("button-addon2");
     const searchinput = document.querySelector(".form-control");
+
 
     //footer
     function youtube(value) {

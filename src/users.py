@@ -1,14 +1,19 @@
 # users.py - 회원가입 및 로그인 application
 
-from flask import Blueprint, request, render_template, session, jsonify
+from flask import Blueprint, request, render_template, session
 # from pymongo import MongoClient
+from flask_bcrypt import Bcrypt
+import json
 
-#users_bp Setup
+# users_bp Setup
 users = Blueprint('login', __name__)
 
-#MongoDB Setup - 배포할 때 연결
+# MongoDB Setup - 배포할 때 연결
 # client = MongoClient('localhost', 27017)
 # db = client.S2lide
+
+# bcrypt Setup
+bcrypt = Bcrypt(users)
 
 @users.route('/')
 def login():
@@ -29,6 +34,9 @@ DB에서 username 찾기(함수)
 찾은 데이터의 password와 입력받은 password가 같은지 확인
     -> 같다면 세션에 username 저장 후 return 메인 페이지로 이동
     -> 다르다면 return "비밀번호가 틀렸습니다."
+
+bcrypt.checkpw("password".encode("utf-8"), pw_hash)
+# 즉 password 라는 비밀번호를 암호화하고, 이후에 체크하는 작업을 할때 해당 메소드를 통해 일치여부 확인 가능
 '''
 
 # 로그인 페이지에서 회원가입 버튼 클릭시 라우터 함수 실행
@@ -58,6 +66,16 @@ def register():
 
     if password != confirmPassword:
         return {'msg': '비밀번호가 일치하지 않습니다.'}
+
+    pw_hash = bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt()) # 비밀번호 암호화
+    doc = {
+        'userName': userName,
+        'email': email,
+        'password': pw_hash
+    }
+
+    with open('temp.json', 'w', encoding='utf-8') as f:
+        json.dump(doc, f, indent="\t")
 
     return
 

@@ -1,9 +1,21 @@
-body {
+html, body {
     margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
 
+.carousel-inner {
+    background-position: center;
+    background-size: cover;
+    height: 50px;
 }
 
 /* login, register */
+.title {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 .center {
     position: absolute;
     top: 30%;
@@ -113,7 +125,9 @@ input[type="submit"]:hover {
     color: #adadad;
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
-
+}
+.signup_link input{
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .signup_link a:hover {
@@ -139,7 +153,7 @@ input[type="submit"]:hover {
     margin: 80px 540px;
     color: #eb6383;
     font-size: 50px;
-    font-family: 'Lora', serif;
+    font-family: 'Merriweather', serif;
 }
 
 #whatru {
@@ -161,6 +175,8 @@ input[type="submit"]:hover {
 #genre {
     width: 420px;
     margin: 0 auto 40px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
 }
 
 #genre .genreEa {
@@ -197,7 +213,6 @@ input[type="submit"]:hover {
     margin: 30px auto;
 }
 
-
 form .searchBar {
     position: relative;
     border-bottom: 2px solid #eb6383;
@@ -209,6 +224,7 @@ form .searchBar {
     padding: 0 43px;
     height: 60px;
     font-size: 30px;
+    font-family: 'Nanum Gothic', sans-serif;
     border: none;
     background: none;
     outline: none;
@@ -236,6 +252,7 @@ form .searchBar {
 #slide {
     width: 185px;
     margin: 30px auto;
+    font-size: 14px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -342,7 +359,6 @@ form .searchBar {
 
 #sidebar.active {
     transform: translateX(-300px);
-
 }
 
 #sidebar ul {
@@ -481,6 +497,7 @@ td, th {
     height: auto;
     min-height: 100%;
     padding-bottom: 300px;
+    margin-bottom: 100px;
 }
 
 footer {
@@ -490,7 +507,7 @@ footer {
     color: #eb6383;
     width: 100%;
     height: 300px;
-    box-shadow: -1px -2px 2px 2px rgb(169, 169, 169) inset, 3px 2px 3px 3px rgb(155, 155, 155);
+    border-top: 2px solid #eb6383;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -580,3 +597,10 @@ footer {
 }
 
 /*/Footer*/
+
+/* videolist.html */
+.videolist-keyword{
+    display:flex;
+    justify-content:center;
+    color: #eb6383;
+  }

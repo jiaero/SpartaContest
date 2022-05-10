@@ -193,7 +193,12 @@ input[type="submit"]:hover {
     margin: 30px auto;
 }
 
-
+.genreBtn{
+    padding:10px 30px 10px 30px;
+    border:1px solid #eb6383;
+    border-radius:15px;
+    background-color:transparent;
+  }
 
 form .searchBar {
     position: relative;
@@ -577,3 +582,12 @@ footer {
 }
 
 /*/Footer*/
+
+
+
+/* videolist.html */
+.videolist-keyword{
+    display:flex;
+    justify-content:center;
+    color: #eb6383;
+  }

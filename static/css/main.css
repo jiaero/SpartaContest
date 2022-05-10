@@ -522,7 +522,6 @@ footer {
     align-items: center;
     text-align: center;
     border-top: 1px solid #eb6383;
-    padding-top: 200px;
 }
 
 .footer-title {
@@ -530,6 +529,7 @@ footer {
     padding: 20px;
     width: 400px;
     justify-content: space-evenly;
+    margin-top:50px;
 }
 
 .footer-title-fst {

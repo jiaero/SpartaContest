@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- External CSS -->
     <link type="text/css" rel="stylesheet" href="../static/css/style.css">
-
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/main_slide.css">
+    <link rel="stylesheet" href="../static/css/temp.css">
     <title>2Slide Main</title>
 </head>
 <body>
@@ -32,10 +34,10 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
-    <!--슬라이드(보류중)-->
+    <!-- 슬라이드(보류중) -->
     <!--<div id="mainPhoto">-->
     <!--<img src="https://i.ytimg.com/vi/XAoQviSh7HQ/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDO59DlFMVL1Lc8lLbKT5dfHz9R_w">-->
-    <!--</div>-->
+    <!--</div> -->
     <div class="subTitle">
         <p id="whatru">What are U</p>
         <p id="gonslide">gonna slide ?</p>
@@ -51,48 +53,10 @@
             </form>
         </div>
         <div id="genre">
-            <div class="genreEa">
-                <a href="#">냐옹</a>
-            </div>
-            <div class="genreEa">
-                <a href="#">챔피언스리그</a>
-            </div>
-            <div class="genreEa">
-                <a href="#">해외축구</a>
-            </div>
-            <div class="genreEa">
-                <a href="#">코딩할때듣는노래</a>
-            </div>
-            <div class="genreEa">
-                <a href="#">노마드코더</a>
-            </div>
-            <div class="genreEa">
-                <a href="#">여행유튜브</a>
-            </div>
-            <div class="genreEa">
-                <a href="#">vlog</a>
-            </div>
-            <div class="genreEa">
-                <a href="#">헬스유튜브</a>
-            </div>
-            <div class="genreEa">
-                <a href="#">누가자꾸칭얼댐</a>
-            </div>
-            <div class="genreEa">
-                <a href="#">영화리뷰</a>
-            </div>
-            <div class="genreEa">
-                <a href="#">react</a>
-            </div>
-            <div class="genreEa">
-                <a href="#">먹방</a>
-            </div>
-            <div class="genreEa">
-                <a href="#">맛집탐방</a>
-            </div>
-            <div class="genreEa">
-                <a href="#">leagueoflegends</a>
-            </div>
+            <button class="genreBtn">고양이</button>
+            <button class="genreBtn">강아지</button>
+            <button class="genreBtn">호랑이</button>
+            <button class="genreBtn">인싸</button>
         </div>
     </div>
     
@@ -316,6 +280,9 @@
 </footer>
 </body>
 <script>
+    // main.html로 왔을때 다시 로컬스토리지 클리어
+    window.onload = window.localStorage.setItem("search", "");
+    
     toggle.onclick = function () {
         toggle.classList.toggle('active');
         sidebar.classList.toggle('active');
@@ -341,5 +308,5 @@
         youtube(value);
     });
 </script>
-</footer>
+<script src="../static/js/api.js"></script>
 </html>

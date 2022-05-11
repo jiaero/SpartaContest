@@ -22,29 +22,29 @@
 
         $(document).ready(function () {
             showComments();
+            $('#post-button').hide()
         });
-
 
         function showComments() {
             $('#comment-box').empty()
 
-            let commentCount = Math.random()*20;
+            let commentCount = Math.random() * 20;
 
             let temp_html = `<tr>
                     <td>False Id</td>
                     <td>False Comment</td>
                 </tr>`
-            for(let i = 0; i < commentCount; i++) {
+            for (let i = 0; i < commentCount; i++) {
                 $('#comment-box').append(temp_html)
             }
-            
+
         }
 
         function showSlides() {
             $.ajax({
                 type: 'GET',
-                url: 'http://',
-                data:{},
+                url: '/playlist',
+                data: {},
                 success: function (response) {
                     let videoLink
                     let imageLink
@@ -55,6 +55,10 @@
                 </div>`
                 }
             })
+        }
+
+        function showPostBtn() {
+            $('post-button').show()
         }
 
     </script>
@@ -108,22 +112,28 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-interval="false">
             <div class="carousel-inner">
                 <div class="carousel-item">
-                    <iframe src="https://www.youtube.com/embed/SLDIsFjq7LM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/SLDIsFjq7LM" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="carousel-item active">
-                    <iframe src="https://www.youtube.com/embed/p8GK7HhmohE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/p8GK7HhmohE" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="carousel-item">
-                    <iframe src="https://www.youtube.com/embed/uYgowuaIwGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/uYgowuaIwGU" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
             </div>
-            <button id="prev-button" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
+            <button id="prev-button" class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button id="next-button" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
+            <button id="next-button" class="carousel-control-next" type="button"
+                data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -137,7 +147,7 @@
         <form>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Comment</label>
-                <textarea id="comment-textarea" class="form-control" id="exampleFormControlTextarea1"
+                <textarea onfocus="showPostBtn" id="comment-textarea" class="form-control" id="exampleFormControlTextarea1"
                     rows="1"></textarea>
                 <button id="post-button" class="btn btn-primary mt-1" type="submit">post</button>
             </div>
@@ -147,15 +157,15 @@
         <div class="comments">
             <table class="table">
                 <thead>
-                    <tr>
+                    <!-- <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Comment</th>
-                    </tr>
+                    </tr> -->
                 </thead>
                 <tbody id="comment-box">
                     <tr>
-                        <td>Sir Cat</td>
-                        <td>Well that's cute</td>
+                        <td colspan="1">Sir Cat</td>
+                        <td colspan="5">Well that's cute</td>
                     </tr>
                 </tbody>
             </table>

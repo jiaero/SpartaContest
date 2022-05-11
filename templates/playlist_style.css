@@ -9,6 +9,140 @@ body {
     margin-bottom: 50px;
 }
 
+/* main - logo */
+#slide {
+    width: 185px;
+    margin: 30px auto;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#slide #logo {
+    width: 130px;
+    height: auto;
+    font-size: 2em;
+    margin: 20px;
+    color: #eb6383;
+    transition: .7s;
+    text-decoration: none;
+}
+
+#slide #S {
+    margin: 0;
+    display: inline-block;
+    transition: .7s;
+
+}
+
+#slide #Two {
+    margin: 0;
+    display: inline-block;
+    transition: .7s;
+
+}
+
+#slide #lide {
+    margin: 0;
+    display: inline-block;
+    transition: .7s;
+}
+
+#slide:hover #lide {
+    transform: translateX(-16px);
+    transition: 1.5s;
+    color: transparent;
+}
+
+#slide:hover #S {
+    transform: translateX(30px);
+    transition: 1s;
+}
+
+#slide:hover #Two {
+    transform: translateX(70px);
+    transition: .9s;
+}
+/* main-logo */
+
+
+/* navbar*/
+#toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#toggle::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background: #eb6383;
+    transform: translateY(-5px);
+    transition: 0.2s;
+}
+
+#toggle::after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background: #eb6383;
+    transform: translateY(5px);
+    transition: 0.2s;
+}
+
+#toggle.active::before {
+    transform: translateY(0px) rotate(45deg);
+}
+
+#toggle.active::after {
+    transform: translateY(0px) rotate(-45deg);
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    transform: translateX(0px);
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    transition: 0.4s;
+}
+
+#sidebar.active {
+    transform: translateX(-300px);
+
+}
+
+#sidebar ul {
+    position: relative;
+    margin-top: 50px;
+}
+
+#sidebar ul li {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 40px;
+}
+
+#sidebar ul li a {
+    color: #eb6383;
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+/* navbar */
+
 /* Carousel */
 #carouselExampleControls {
     width: 800px;
